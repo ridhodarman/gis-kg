@@ -1,4 +1,7 @@
 <?php
+ header('content-type: application/json; charset=utf8');
+ header("access-control-allow-origin: *");
+
 require 'koneksi.php';
 $querysearch="	SELECT row_to_json(fc) 
 				FROM ( SELECT 'FeatureCollection' As type, array_to_json(array_agg(f)) As features 
