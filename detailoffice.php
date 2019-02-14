@@ -1,5 +1,6 @@
 <?php
-
+ header('content-type: application/json; charset=utf8');
+ header("access-control-allow-origin: *");
 include('koneksi.php');
 
 $id=$_GET['id'];
