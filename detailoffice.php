@@ -2,7 +2,6 @@
 
 include('koneksi.php');
 
-echo "data kantor";
 $id=$_GET['id'];
 
 $sql = "SELECT O.office_building_id, O.name_of_office_building, O.building_area, O.land_area, O.parking_area, O.standing_year, O.electricity_capacity, O.address, O.type_of_construction, O.type_of_office,
